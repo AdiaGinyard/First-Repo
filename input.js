@@ -12,26 +12,44 @@ let q3
 
 c1o1.addEventListener("click", function() {
   q1=1;
+c1o1.style.border="2px solid #008cba80";
    });
 
  c1o2.addEventListener("click", function() {
   q1=2;
+  c1o2.style.border="2px solid #008cba80";
   });
 
  c2o1.addEventListener("click", function() {
    q2=1;
+   c2o1.style.border="2px solid #008cba80";
    });
 
  c2o2.addEventListener("click", function() {
    q2=2;
+   c2o2.style.border="2px solid #008cba80";
    });
 
   c3o1.addEventListener("click", function() {
   q3=1;
+  c3o1.style.border="2px solid #008cba80";
   });
 
   c3o2.addEventListener("click", function() {
   q3=2;
+  c3o2.style.border="2px solid #008cba80";
   });
-                 
-   
+
+
+button.addEventListener("click", function() {
+  let message = document.querySelector(".message");
+  if(q1 === 1 && q2 === 1 || q2 === 1 && q3 === 2){
+    message.innerHTML = "Earth Sign!";
+  } else if (q1 === 1 && q2 === 2 || q2 === 2 && q3 === 2){
+    message.innerHTML = "Air Sign!";
+  } else if (q1 === 2 && q2 === 1 || q2 === 1 && q3 === 1){
+    message.innerHTML = "Fire Sign!";
+} else if (q1 === 2 && q2 === 2 || q2 === 2 && q3 === 1){
+  message.innerHTML = "Water Sign!";
+}
+});
