@@ -12,18 +12,12 @@ img {
     border: 2px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 200px;
-   
-  }
+    width: 150px;
+  } 
   
   img:hover {
     box-shadow: 0 0 2px 2px #008cba80;
   }
-.zodiac{
-  length:400px;
-  width: 400px;
-
-}
 
 button {
     width: 200px;
@@ -38,9 +32,10 @@ button {
 .button {
     margin-top: 20px;
     text-align: center;
-
   }
 
 .message{
   font-size: 40px;
 }
+
+
