@@ -5,6 +5,7 @@ let c2o2 = document.querySelector('.c2o2') ;
 let c3o1 = document.querySelector('.c3o1') ;
 let c3o2 = document.querySelector('.c3o2') ;
 let button = document.querySelector("button");
+let message = document.querySelector('.message')
 let q1 
 let q2
 let q3
@@ -45,11 +46,15 @@ button.addEventListener("click", function() {
   let message = document.querySelector(".message");
   if(q1 === 1 && q2 === 1 || q2 === 1 && q3 === 2){
     message.innerHTML = "Earth Sign!";
+    button.style.display = "none";
   } else if (q1 === 1 && q2 === 2 || q2 === 2 && q3 === 2){
     message.innerHTML = "Air Sign!";
+    button.style.display = "none";
   } else if (q1 === 2 && q2 === 1 || q2 === 1 && q3 === 1){
     message.innerHTML = "Fire Sign!";
-} else if (q1 === 2 && q2 === 2 || q2 === 2 && q3 === 1){
+    button.style.display = "none";
+  } else if (q1 === 2 && q2 === 2 || q2 === 2 && q3 === 1){
   message.innerHTML = "Water Sign!";
-}
+  button.style.display = "none";
+  }
 });

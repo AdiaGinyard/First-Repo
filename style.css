@@ -1,15 +1,15 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e1e2e3;
     color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     text-align: center;
-}
+  }
 
 img {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 200px;
@@ -17,8 +17,13 @@ img {
   }
   
   img:hover {
-    box-shadow: 0 0 2px 1px #008cba80;
+    box-shadow: 0 0 2px 2px #008cba80;
   }
+.zodiac{
+  length:400px;
+  width: 400px;
+
+}
 
 button {
     width: 200px;
@@ -28,10 +33,14 @@ button {
     color: white;
     font-size: 16px;
     cursor: pointer;
-}
+  }
 
 .button {
     margin-top: 20px;
     text-align: center;
 
+  }
+
+.message{
+  font-size: 40px;
 }
